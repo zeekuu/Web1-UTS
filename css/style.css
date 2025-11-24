@@ -382,7 +382,7 @@ body.dark form {
     }
 
     .img img {
-        width: 100px;
+        width: 130px;
     }
 
     /* galeri */
@@ -396,7 +396,7 @@ body.dark form {
     }
 
     .container-img img {
-        width: 180px;
+        width: 2200px;
     }
     
     /* form */
@@ -607,3 +607,4 @@ body.dark form {
 
 
 }
+
