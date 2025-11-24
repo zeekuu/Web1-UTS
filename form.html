@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Tugas UTS</title>
+</head>
+<body class="dark">
+    <nav>
+        <div class="logo">
+            <p><span>T</span>engku</p>
+        </div>
+        <div class="navmenu">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+        </div>
+        <div class="kotakbtn">
+            <div class="btn" onclick="lightMode()">Light Mode</div>
+            <div class="btn" onclick="darkMode()">Dark Mode</div>
+        </div>
+    </nav>
+    <section class="container-form">
+        <div class="judulForm">
+            <h1>Input Tugas Baru Kamu Disini</h1>
+            <p>Membantu Pencatatan Tugas Anda Lebih Mudah Diakses</p>
+        </div>
+        <form onsubmit="return validasiForm()" class="form">
+            <div class="formField">
+                <label for="namaTugas">Nama Tugas</label><br>
+                <input type="text" name="namaTugas" id="namaTugas" placeholder="Nama Tugas">
+            </div>
+            <div class="formField">
+                <label for="mataKuliah">Mata Kuliah</label><br>
+                <input type="text" name="mataKuliah" id="mataKuliah" placeholder="Mata Kuliah">
+            </div>
+            <div class="formField">
+                <label for="jenisTugas">Jenis Tugas</label><br>
+                <select name="jenisTugas" id="jenisTugas">
+                    <option value="">Individu</option>
+                    <option value="">Kelompok</option>
+                    <option value="">Makalah</option>
+                    <option value="">Proyek</option>
+                    <option value="">Ujian</option>
+                    <option value="">Presentasi</option>
+                </select>
+            </div>
+            <div class="formField">
+                <label for="catatan">Catatan</label><br>
+                <textarea name="catatan" id="catatan"></textarea>
+            </div>
+            <div class="formField">
+                <label for="file">File Pembelajaran</label><br>
+                <input type="file" name="file" id="file">
+            </div>
+            <div class="formField">
+                <label for="deadline">Deadline</label><br>
+                <input type="date" name="deadline" id="deadline">
+            </div>
+            <div class="formField">
+                <label for="status">Status</label><br>
+                <input type="radio" name="radio" id="radio">
+                <label for="do">Do</label>
+                <input type="radio" name="radio" id="radio">
+                <label for="On Progress">On Progress</label>
+                <input type="radio" name="radio" id="radio">
+                <label for="done">Done</label>
+            </div>
+            <div class="btnForm">
+                <input type="reset" name="reset" id="reset">
+                <input type="submit" name="submit" id="submit">
+            </div>
+        </form>
+    </section>
+    <section>
+        <footer>
+            <div class="content-imgfoot">
+                <div class="imgfoot">
+                    <a href=""><img src="img/tiktok.png" alt="tiktok"></a>
+                </div>
+                <div class="imgfoot">
+                    <a href=""><img src="img/instagram.png" alt="ig"></a>
+                </div>
+                <div class="imgfoot">
+                    <a href=""><img src="img/github.png" alt="github"></a>
+                </div>
+            </div>
+            <div class="content-copyright">
+                <p>2025-Tengku</p>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
